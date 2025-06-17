@@ -19,8 +19,10 @@
     status = "okay";
 };
 
+&/ {
 encoder_push_right: encoder_push_right {
         compatible = "zmk,behavior-plain-input";
         label = "ENCODER_PUSH_RIGHT";
         gpios = <&gpio1 7 (GPIO_PULL_UP | GPIO_ACTIVE_LOW)>;
     };
+};
