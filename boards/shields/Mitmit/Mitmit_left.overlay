@@ -14,11 +14,3 @@
 &encoder_left {
     status = "okay";
 };
-
-&/ {
-encoder_push_left: encoder_push_left {
-    compatible = "zmk,behavior-plain-input";
-    label = "ENCODER_PUSH_LEFT";
-    gpios = <&gpio1 7 (GPIO_PULL_UP | GPIO_ACTIVE_LOW)>;
-};
-};
