@@ -1,0 +1,20 @@
+file_format: "1"
+id: Mitmit
+name: Mitmit
+type: shield
+url: https://github.com/Haha1609/Mitmit
+type: board
+arch: arm
+output:
+  - usb
+  - ble
+features:
+  - keys
+  - studio
+  - pointer
+  - encoder
+siblings:
+  - Mitmit_left
+  - Mitmit_right
+
+  
