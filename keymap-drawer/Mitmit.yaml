@@ -35,14 +35,14 @@ layers:
   - E
   - R
   - T
-  - PLAY PAUSE
-  - $$mdi:mouse-scroll-wheel$$
   - Y
   - U
   - I
   - O
   - P
   - {t: '$$mdi:backspace$$', type: backspace}
+  - PLAY PAUSE
+  - $$mdi:mouse-scroll-wheel$$
   - Ins
   - A
   - S
@@ -120,14 +120,14 @@ layers:
   - E
   - R
   - T
-  - $$mdi:bluetooth-off$$
-  - '&mkp MB1'
   - Y
   - U
   - I
   - O
   - P
   - {t: '$$mdi:backspace$$', type: backspace}
+  - $$mdi:bluetooth-off$$
+  - '&mkp MB1'
   - $$mdi:apple-keyboard-caps$$
   - A
   - S
@@ -205,15 +205,15 @@ layers:
   - E
   - R
   - T
-  - PLAY PAUSE
-  - $$mdi:mouse-scroll-wheel$$
   - Y
   - U
   - I
   - O
   - P
   - {t: '$$mdi:backspace$$', type: backspace}
-  - $$mdi:apple-keyboard-caps$$
+  - PLAY PAUSE
+  - $$mdi:mouse-scroll-wheel$$
+  - Ins
   - A
   - S
   - D
@@ -244,17 +244,17 @@ layers:
   - $$mdi:apple-keyboard-control$$
   - LGUI
   - $$mdi:apple-keyboard-option$$
-  - '&mkp MB1'
-  - '&mkp MB2'
-  - $$mdi:keyboard-space$$
-  - {t: '$$mdi:keyboard-return$$', type: enter}
-  - {t: '$$mdi:keyboard-return$$', type: enter}
-  - $$mdi:keyboard-space$$
-  - '&mkp MB1'
-  - '&mkp MB2'
   - $$mdi:backspace-reverse-outline$$
-  - $$mdi:apple-keyboard-option$$
-  - $$mdi:apple-keyboard-control$$
+  - {t: '$$mdi:keyboard-return$$', type: enter}
+  - $$mdi:keyboard-space$$
+  - '&mkp MB1'
+  - '&mkp MB2'
+  - $$mdi:keyboard-space$$
+  - {t: '$$mdi:keyboard-return$$', type: enter}
+  - lower
+  - Ctl+C
+  - Ctl+V
+  - {t: V, h: '$$mdi:apple-keyboard-command$$'}
   adjust:
   - $$mdi:keyboard-esc$$
   - F1
@@ -290,15 +290,15 @@ layers:
   - E
   - R
   - T
-  - PLAY PAUSE
-  - $$mdi:mouse-scroll-wheel$$
   - Y
   - U
   - I
   - O
   - P
   - {t: '$$mdi:backspace$$', type: backspace}
-  - $$mdi:apple-keyboard-caps$$
+  - PLAY PAUSE
+  - $$mdi:mouse-scroll-wheel$$
+  - Ins
   - A
   - S
   - D
@@ -329,17 +329,17 @@ layers:
   - $$mdi:apple-keyboard-control$$
   - LGUI
   - $$mdi:apple-keyboard-option$$
-  - '&mkp MB1'
-  - '&mkp MB2'
-  - $$mdi:keyboard-space$$
-  - {t: '$$mdi:keyboard-return$$', type: enter}
-  - {t: '$$mdi:keyboard-return$$', type: enter}
-  - $$mdi:keyboard-space$$
-  - '&mkp MB1'
-  - '&mkp MB2'
   - $$mdi:backspace-reverse-outline$$
-  - $$mdi:apple-keyboard-option$$
-  - $$mdi:apple-keyboard-control$$
+  - {t: '$$mdi:keyboard-return$$', type: enter}
+  - $$mdi:keyboard-space$$
+  - '&mkp MB1'
+  - '&mkp MB2'
+  - $$mdi:keyboard-space$$
+  - {t: '$$mdi:keyboard-return$$', type: enter}
+  - lower
+  - Ctl+C
+  - Ctl+V
+  - {t: V, h: '$$mdi:apple-keyboard-command$$'}
   function:
   - $$mdi:keyboard-esc$$
   - F1
@@ -375,15 +375,15 @@ layers:
   - E
   - R
   - T
-  - PLAY PAUSE
-  - $$mdi:mouse-scroll-wheel$$
   - Y
   - U
   - I
   - O
   - P
   - {t: '$$mdi:backspace$$', type: backspace}
-  - $$mdi:apple-keyboard-caps$$
+  - PLAY PAUSE
+  - $$mdi:mouse-scroll-wheel$$
+  - Ins
   - A
   - S
   - D
@@ -414,14 +414,14 @@ layers:
   - $$mdi:apple-keyboard-control$$
   - LGUI
   - $$mdi:apple-keyboard-option$$
-  - '&mkp MB1'
-  - '&mkp MB2'
-  - $$mdi:keyboard-space$$
-  - {t: '$$mdi:keyboard-return$$', type: enter}
-  - {t: '$$mdi:keyboard-return$$', type: enter}
-  - $$mdi:keyboard-space$$
-  - '&mkp MB1'
-  - '&mkp MB2'
   - $$mdi:backspace-reverse-outline$$
-  - $$mdi:apple-keyboard-option$$
-  - $$mdi:apple-keyboard-control$$
+  - {t: '$$mdi:keyboard-return$$', type: enter}
+  - $$mdi:keyboard-space$$
+  - '&mkp MB1'
+  - '&mkp MB2'
+  - $$mdi:keyboard-space$$
+  - {t: '$$mdi:keyboard-return$$', type: enter}
+  - lower
+  - Ctl+C
+  - Ctl+V
+  - {t: V, h: '$$mdi:apple-keyboard-command$$'}
