@@ -28,12 +28,13 @@
         wakeup-source;
         diode-direction = "col2row";
         row-gpios
-           =<&gpio0 2 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>,   /* Row 0 GPIO 002 */ 
-            <&gpio1 15 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>,  /* Row 1 GPIO 115 */ 
-            <&gpio1 13 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>,  /* Row 2 GPIO 113 */ 
-            <&gpio1 11 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>,  /* Row 3 GPIO 111 */ 
-            <&gpio0 10 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>,  /* Row 4 GPIO 010 */ 
-            <&gpio0 9 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>;   /* Row 5 GPIO 009 */
+            =<&gpio0 2 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>,  /* Row 0 */ 
+            <&gpio1 15 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>,  /* Row 1 */
+            <&gpio1 13 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>,  /* Row 2 */ 
+            <&gpio1 7 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>,   /* Row new */
+            <&gpio1 11 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>,  /* Row 3 */ 
+            <&gpio0 10 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>,  /* Row 4 */ 
+            <&gpio0 9 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>;   /* Row 5*/
     };
 
 	encoder_left: encoder_left {
