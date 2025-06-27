@@ -39,17 +39,17 @@
 	encoder_left: encoder_left {
         compatible = "alps,ec11";
       		a-gpios = <&gpio1 1 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>;
-	   	b-gpios = <&gpio0 31 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>;
-		steps = <12>;
+	   	    b-gpios = <&gpio0 31 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>;
+		    steps = <12>;
       		status = "disabled";
 	};
 
    
 	encoder_right: encoder_right {
 		compatible = "alps,ec11";
-		a-gpios = <&gpio1 1 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>;
-	 	b-gpios = <&gpio0 31 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>;
-		steps = <12>;
+		    a-gpios = <&gpio1 1 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>;
+	 	    b-gpios = <&gpio0 31 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>;
+		    steps = <12>;
        		status = "disabled";
 	};
 
