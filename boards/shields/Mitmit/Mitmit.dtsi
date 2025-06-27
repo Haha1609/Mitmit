@@ -4,7 +4,7 @@
 / {
     chosen {
         zmk,kscan = &kscan0;
-	    zmk,battery = &vbatt;
+	zmk,battery = &vbatt;
         zmk,physical-layout = &default_layout;
 
 
@@ -37,7 +37,7 @@
         wakeup-source;
         diode-direction = "col2row";
         row-gpios
-            =<&gpio0 2 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>,   /* Row 0 GPIO 002 */ 
+            =<&gpio0 2 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>,  /* Row 0 GPIO 002 */ 
             <&gpio1 15 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>,  /* Row 1 GPIO 115 */ 
             <&gpio1 13 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>,  /* Row 2 GPIO 113 */ 
             <&gpio1 11 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>,  /* Row 3 GPIO 111 */ 
