@@ -14,7 +14,7 @@
 &kscan_composite {
         direct {
             kscan = <&kscan_direct>;
-	            row-offset = <2>;
+	            row-offset = <1>;
 	            col-offset = <8>;
              };
 	  };
