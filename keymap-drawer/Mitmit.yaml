@@ -35,14 +35,14 @@ layers:
   - E
   - R
   - T
+  - PLAY PAUSE
+  - $$mdi:mouse-scroll-wheel$$
   - Y
   - U
   - I
   - O
   - P
   - {t: '$$mdi:backspace$$', type: backspace}
-  - PLAY PAUSE
-  - $$mdi:mouse-scroll-wheel$$
   - Ins
   - A
   - S
@@ -120,14 +120,14 @@ layers:
   - E
   - R
   - T
+  - $$mdi:bluetooth-off$$
+  - '&mkp MB1'
   - Y
   - U
   - I
   - O
   - P
   - {t: '$$mdi:backspace$$', type: backspace}
-  - $$mdi:bluetooth-off$$
-  - '&mkp MB1'
   - $$mdi:apple-keyboard-caps$$
   - A
   - S
@@ -205,14 +205,14 @@ layers:
   - E
   - R
   - T
+  - PLAY PAUSE
+  - $$mdi:mouse-scroll-wheel$$
   - Y
   - U
   - I
   - O
   - P
   - {t: '$$mdi:backspace$$', type: backspace}
-  - PLAY PAUSE
-  - $$mdi:mouse-scroll-wheel$$
   - Ins
   - A
   - S
@@ -290,14 +290,14 @@ layers:
   - E
   - R
   - T
+  - PLAY PAUSE
+  - $$mdi:mouse-scroll-wheel$$
   - Y
   - U
   - I
   - O
   - P
   - {t: '$$mdi:backspace$$', type: backspace}
-  - PLAY PAUSE
-  - $$mdi:mouse-scroll-wheel$$
   - Ins
   - A
   - S
@@ -375,14 +375,14 @@ layers:
   - E
   - R
   - T
+  - PLAY PAUSE
+  - $$mdi:mouse-scroll-wheel$$
   - Y
   - U
   - I
   - O
   - P
   - {t: '$$mdi:backspace$$', type: backspace}
-  - PLAY PAUSE
-  - $$mdi:mouse-scroll-wheel$$
   - Ins
   - A
   - S
