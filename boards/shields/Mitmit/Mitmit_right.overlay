@@ -17,6 +17,7 @@
 	            row-offset = <2>;
 	            col-offset = <8>;
              };
+	  };
 
 &default_transform { 
     col-offset = <8>;
