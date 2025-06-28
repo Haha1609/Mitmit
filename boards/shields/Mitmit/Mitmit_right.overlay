@@ -14,8 +14,8 @@
 &kscan_composite {
         direct {
             kscan = <&kscan_direct>;
-	            row-offset = <2>;
-	            col-offset = <0>;  // position start from "default transform col-offset" 
+	            row-offset = <1>;  // start to count from "default transform col-offset" row 2nd
+	            col-offset = <15>;  // position start from "default transform col-offset" col to til the aim 
              };
 	  };
 
