@@ -22,6 +22,6 @@ Right Side Configuration:
   
     row-offset = <target row>;
     
-  -On the selected row, start counting columns from (&default_transform { col-offset = <9>; }) to Adjust the col-offset to reach the target position.
+  -On the selected row, start counting columns from (&default_transform { col-offset = <X>; }) to Adjust the col-offset to reach the target position.
    
 ![Mitmit Keymap](keymap-drawer/Mitmit.svg)
