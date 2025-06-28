@@ -1,4 +1,7 @@
-Direct Key Notes
+Mitmit 84 keys layout include Ano switch (5 buttons + rotary encoder) on both side. 
+
+***Direct Key Notes
+
   A direct key must be placed on a separate row/column outside the main matrix.
   Each side's .overlay file must define the direct key separately.
 
