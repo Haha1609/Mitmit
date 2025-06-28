@@ -35,8 +35,8 @@ layers:
   - E
   - R
   - T
-  - PLAY PAUSE
-  - $$mdi:mouse-scroll-wheel$$
+  - {t: KP ENTER, h: PLAY PAUSE}
+  - {t: KP ENTER, h: PLAY PAUSE}
   - Y
   - U
   - I
@@ -57,7 +57,7 @@ layers:
   - L
   - {t: ;, s: ':'}
   - {t: '''', s: '"'}
-  - {t: '$$mdi:keyboard-return$$', h: '$$mdi:apple-keyboard-shift$$'}
+  - $$mdi:apple-keyboard-shift$$
   - Z
   - X
   - C
@@ -70,7 +70,7 @@ layers:
   - {t: ',', s: <}
   - {t: ., s: '>'}
   - {t: /, s: '?'}
-  - {t: '$$mdi:keyboard-return$$', h: '$$mdi:apple-keyboard-shift$$'}
+  - {t: KP ENTER, h: '$$mdi:apple-keyboard-shift$$'}
   - $$mdi:apple-keyboard-control$$
   - LGUI
   - $$mdi:apple-keyboard-option$$
@@ -80,7 +80,7 @@ layers:
   - '&mkp MB1'
   - '&mkp MB2'
   - $$mdi:keyboard-space$$
-  - '&mkp MB3'
+  - {t: '$$mdi:backspace$$', type: backspace}
   - lower
   - Ctl+C
   - Ctl+V
