@@ -56,12 +56,8 @@
 	            kscan = <&kscan1>;
 	        };
 
-	        // Include the direct GPIO driver...
-	        direct {
-	            kscan = <&kscan2>;
-	            row-offset = <2>;
-	            col-offset = <7>; 
-	        };
+	        // Include the direct GPIO driver on left right shield...
+	        
     };
 
    kscan1: kscan_matrix {
