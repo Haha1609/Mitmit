@@ -16,6 +16,7 @@
 	            row-offset = <2>;
 	            col-offset = <7>;
              };
+	  };
 
 &kscan1 {
     col-gpios
