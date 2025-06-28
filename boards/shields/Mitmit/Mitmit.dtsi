@@ -3,7 +3,7 @@
 
 / {
     chosen {
-    zmk,kscan = &kscan0;
+    zmk,kscan = &kscan_composite;
     zmk,physical-layout = &default_layout;
     zmk,battery = &vbatt;
     };
@@ -46,7 +46,7 @@
         >;
     };
 
-	    kscan0: kscan_composite {
+	    kscan_composite: kscan_composite {
 	        compatible = "zmk,kscan-composite";
 	        rows = <6>;
 	        columns = <16>;
