@@ -15,7 +15,7 @@
         direct {
             kscan = <&kscan_direct>;
 	            row-offset = <2>;
-	            col-offset = <8>;
+	            col-offset = <0>;  // position start from "default transform col-offset" 
              };
 	  };
 
