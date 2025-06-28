@@ -2,50 +2,69 @@
 
 / {
     chosen {
-        zmk,kscan = &kscan0;
+        zmk,kscan = &kscan_composite;
         zmk,matrix_transform = &default_transform;
-	zmk,physical-layout = &default_layout;
+	    zmk,physical-layout = &default_layout;
     };
 
-    kscan0: kscan_composite {
-        compatible = "zmk,kscan-composite";
-        rows = <6>;
-        columns = <16>;
-
-        // Include the matrix driver
-        matrix {
-            kscan = <&kscan1>;
+    encoder_left: encoder_left {
+            compatible = "alps,ec9";
+                a-gpios = <&gpio1 1 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>;
+            b-gpios = <&gpio0 31 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>;
+            steps = <10>;
+                status = "disabled";
         };
 
-        // Include the direct GPIO driver...
-        direct {
-            kscan = <&kscan2>;
-            row-offset = <2>;
-            col-offset = <7>; 
+    
+        encoder_right: encoder_right {
+            compatible = "alps,ec9";
+            a-gpios = <&gpio1 1 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>;
+            b-gpios = <&gpio0 31 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>;
+            steps = <10>;
+                status = "disabled";
         };
-    };
 
-    default_transform: keymap_transform_0 {
-        compatible = "zmk,matrix-transform";
-        columns = <16>;
-        rows = <6>;
+            sensors: sensors {
+                compatible = "zmk,keymap-sensors";
+                sensors = <&encoder_left &encoder_right>;
+                triggers-per-rotation = <10>;
+        }; 
 
-        map = <
-            RC(0,0) RC(0,1) RC(0,2) RC(0,3) RC(0,4) RC(0,5) RC(0,6)                          RC(0,7) RC(0,8) RC(0,9) RC(0,10) RC(0,11) RC(0,12) RC(0,13)
-            RC(1,0) RC(1,1) RC(1,2) RC(1,3) RC(1,4) RC(1,5) RC(1,6)                          RC(1,7) RC(1,8) RC(1,9) RC(1,10) RC(1,11) RC(1,12) RC(1,13)
-            RC(2,0) RC(2,1) RC(2,2) RC(2,3) RC(2,4) RC(2,5)                                          RC(2,8) RC(2,9) RC(2,10) RC(2,11) RC(2,12) RC(2,13)                                                                            
-            RC(3,0) RC(3,1) RC(3,2) RC(3,3) RC(3,4) RC(3,5) RC(3,6)                          RC(3,7) RC(3,8) RC(3,9) RC(3,10) RC(3,11) RC(3,12) RC(3,13)
-            RC(4,0) RC(4,1) RC(4,2) RC(4,3) RC(4,4) RC(4,5) RC(4,6)                          RC(4,7) RC(4,8) RC(4,9) RC(4,10) RC(4,11) RC(4,12) RC(4,13)
-            RC(5,0) RC(5,1) RC(5,2) RC(5,3) RC(5,4) RC(5,5) RC(5,6)                          RC(5,7) RC(5,8) RC(5,9) RC(5,10) RC(5,11) RC(5,12) RC(5,13)
+     default_transform: keymap_transform_0 {
+	        compatible = "zmk,matrix-transform";
+	        columns = <14>;
+	        rows = <6>;
+	                   map = <
+	            RC(0,0) RC(0,1) RC(0,2) RC(0,3) RC(0,4) RC(0,5) RC(0,6)                          RC(0,7) RC(0,8) RC(0,9) RC(0,10) RC(0,11) RC(0,12) RC(0,13)
+	            RC(1,0) RC(1,1) RC(1,2) RC(1,3) RC(1,4) RC(1,5) RC(1,6)                          RC(1,7) RC(1,8) RC(1,9) RC(1,10) RC(1,11) RC(1,12) RC(1,13)
+	            RC(2,0) RC(2,1) RC(2,2) RC(2,3) RC(2,4) RC(2,5) RC(2,6)                          RC(2,7) RC(2,8) RC(2,9) RC(2,10) RC(2,11) RC(2,12) RC(2,13) 
+		    	RC(3,0) RC(3,1) RC(3,2) RC(3,3) RC(3,4) RC(3,5) RC(3,6)                          RC(3,7) RC(3,8) RC(3,9) RC(3,10) RC(3,11) RC(3,12) RC(3,13)
+	            RC(4,0) RC(4,1) RC(4,2) RC(4,3) RC(4,4) RC(4,5) RC(4,6)                          RC(4,7) RC(4,8) RC(4,9) RC(4,10) RC(4,11) RC(4,12) RC(4,13)
+	            RC(5,0) RC(5,1) RC(5,2) RC(5,3) RC(5,4) RC(5,5) RC(5,6)                          RC(5,7) RC(5,8) RC(5,9) RC(5,10) RC(5,11) RC(5,12) RC(5,13)
+       
         >;
     };
 
-    kscan1: kscan_matrix {
+    kscan_composite: kscan_composite {
+	        compatible = "zmk,kscan-composite";
+	        rows = <6>;
+	        columns = <16>;
+	
+	        // Include the matrix driver
+	        matrix {
+	            kscan = <&kscan1>;
+	        };
+
+	        // Include the direct GPIO driver on left right shield...
+	        
+    };
+
+   kscan1: kscan_matrix {
         compatible = "zmk,kscan-gpio-matrix";
         // define 6x7 matrix here...
 	    wakeup-source;
-        diode-direction = "col2row";
-        row-gpios
+            diode-direction = "col2row";
+            row-gpios
             =<&gpio0 2 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>,  /* Row 0 */ 
             <&gpio1 15 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>,  /* Row 1 */
             <&gpio1 13 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>,  /* Row 2 */ 
@@ -55,42 +74,12 @@
 
     };
 
- // Direct GPIO for SW1
-    kscan2: kscan_direct {
-        compatible = "zmk,kscan-gpio-direct";
-        // define 2 direct GPIOs here...
-	    input-gpios = 
-            <&gpio1 2 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>,   // Left SW1 (use any free GPIO)
-            <&gpio1 7 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>;  // Right SW1 (use any free GPIO)
-    };
-
-	encoder_left: encoder_left {
-        compatible = "alps,ec11";
-      		a-gpios = <&gpio1 1 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>;
-	   	    b-gpios = <&gpio0 31 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>;
-		    steps = <12>;
-      		status = "disabled";
-	};
-
-   
-	encoder_right: encoder_right {
-		compatible = "alps,ec11";
-		    a-gpios = <&gpio1 1 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>;
-	 	    b-gpios = <&gpio0 31 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>;
-		    steps = <12>;
-       		status = "disabled";
-	};
-
-    sensors: sensors {
-        compatible = "zmk,keymap-sensors";
-        sensors = <&encoder_left &encoder_right>;
-        triggers-per-rotation = <12>;
-	};
+    
 
 };
 
 &default_layout {
     transform = <&default_transform>;
-    // kscan = <&kscan0>; // 
+    // kscan = <&kscan_composite>; // 
     };
 
