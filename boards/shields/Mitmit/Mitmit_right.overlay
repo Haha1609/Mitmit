@@ -20,7 +20,7 @@
 	  };
 
 &default_transform { 
-    col-offset = <8>;
+    col-offset = <9>;
 };
 
 &kscan1 {
