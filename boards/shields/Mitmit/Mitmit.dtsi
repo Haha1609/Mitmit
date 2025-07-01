@@ -48,7 +48,7 @@
             <&gpio1 13 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>,  /* Row 2 */ 
             <&gpio1 11 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>,  /* Row 3 */ 
             <&gpio0 10 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>,  /* Row 4 */ 
-            <&gpio0  9 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>;  /* Row 5*/
+            <&gpio0  9 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>;  /* Row 5 */
 
     };
 
