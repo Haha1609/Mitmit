@@ -1,5 +1,28 @@
 Mitmit 84 keys layout include Ano switch (5 buttons + rotary encoder) on both side. 
 
+#ZMK STUDIO auto enable, no lock key needed.
+
+#Split keyboard
+
+#Wireless
+
+#Super Mini Nrf52840 Pro Micro - #Nice! Nano v2 compatible
+
+#Pointing key on navigation switch - #Mouse key
+
+#5 way Navigation switch
+
+#Composite driver - #ZMK composite driver
+
+#Custom layout - #Custom shields - #Custom design
+
+
+
+
+   
+![Mitmit Keymap](keymap-drawer/Mitmit.svg)
+
+
 ***Direct Key must be placed on a separate row or column beside the main matrix.
 
 ***Each side's .overlay file must define the direct key separately.
@@ -27,5 +50,3 @@ Right Side overlay:
     row-offset = <target row>;
     
   -On the selected row, start counting columns from (&default_transform { col-offset = <shifted RC>; }) to Adjust the col-offset to reach the target position.
-   
-![Mitmit Keymap](keymap-drawer/Mitmit.svg)
