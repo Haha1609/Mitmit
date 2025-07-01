@@ -62,7 +62,9 @@ As such, those are in use within the default layer at this time.*/
 &kp LCTRL   &kp LGUI  &kp LALT  &kp DEL  &kp BSPC  &kp SPACE  &mkp MB1                   &mkp MB2                   &kp SPACE  &kp BACKSPACE  &mo 1      &kp LC(C)  &kp LC(V)  &kp LG(V)
             >;
 
-            sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP &inc_dec_kp PG_DN PG_UP>;
+            sensor-bindings =
+                <&inc_dec_kp C_VOLUME_UP C_VOL_DN>,
+                <&inc_dec_kp K_SCROLL_UP K_SCROLL_DOWN>;
         };
 
         lower_layer {
