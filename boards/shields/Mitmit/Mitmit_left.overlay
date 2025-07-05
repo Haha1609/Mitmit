@@ -26,7 +26,7 @@
              <&gpio1 0  (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>,  
              <&gpio0 11 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>,
              <&gpio1 4  (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>,
-             <&gpio1 7  (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>;
+             <&gpio1 6  (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>;
 };
 
 &encoder_left {
