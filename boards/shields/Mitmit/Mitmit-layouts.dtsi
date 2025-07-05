@@ -1,11 +1,11 @@
 #include <physical_layouts.dtsi>
 
 / {
-    default_layout: default_layout {
+    physical_layout: physical_layout_0  {
         compatible = "zmk,physical-layout";
         display-name = "Mitmit";
-        transform = <&default_transform>;
-        kscan = <&kscan_composite>;
+        /* transform = <&default_transform>;
+        kscan = <&kscan_composite>; */
 
         studio-config {
             compatible = "zmk,studio-config";
