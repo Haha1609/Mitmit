@@ -82,7 +82,7 @@
 	
 };
 
- &default_layout {
+ &physical_layout {
     transform = <&default_transform>;
     // kscan = <&kscan_composite>; //
     };
