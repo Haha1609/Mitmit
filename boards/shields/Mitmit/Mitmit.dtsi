@@ -4,7 +4,7 @@
 / {
     chosen {
     zmk,kscan = &kscan_composite;
-    zmk,physical-layout = &default_layout;
+    zmk,physical-layout = &physical_layout;
     zmk,battery = &vbatt;
     };
 	
