@@ -36,7 +36,7 @@ layers:
   - R
   - T
   - {t: KP ENTER, h: PLAY PAUSE}
-  - {t: KP ENTER, h: PLAY PAUSE}
+  - '&mkp MB3'
   - Y
   - U
   - I
