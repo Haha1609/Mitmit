@@ -12,7 +12,7 @@ Mitmit 84 keys layout include Ano switch (5 buttons + rotary encoder) on both si
 
 #5 way Navigation switch
 
-#Composite driver - #ZMK composite driver
+#Composite driver - #ZMK composite driver to merge matrix wuth direct wired key
 
 #Custom layout - #Custom shields - #Custom design
 
