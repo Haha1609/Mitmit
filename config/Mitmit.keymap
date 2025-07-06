@@ -64,7 +64,7 @@ As such, those are in use within the default layer at this time.*/
 
             sensor-bindings =
                 <&inc_dec_kp C_VOLUME_UP C_VOL_DN>,
-                <&inc_dec_kp UP_ARROW DOWN>;
+                <&inc_dec_kp PAGE_DOWN PG_UP>;
         };
 
         lower_layer {
