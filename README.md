@@ -4,7 +4,7 @@ Mit is my cat's name :)
 
 I made some mistakes and damaged several components while building this keyboard. If you appreciate my work, please consider donating—even just $1 would help me recover from the losses. Thank you so much for your support!
 
-[Donate](https://paypal.me/99001194)
+[Donate me via Paypal](https://paypal.me/99001194)
 
 #ZMK STUDIO auto enable, no lock key needed.
 
