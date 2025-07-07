@@ -99,7 +99,7 @@ layers:
   - F8
   - F9
   - F10
-  - F11
+  - {t: F11, h: F12}
   - {t: '-', s: _}
   - {t: '1', s: '!'}
   - {t: '2', s: '@'}
@@ -113,7 +113,7 @@ layers:
   - {t: '8', s: '*'}
   - {t: '9', s: (}
   - {t: '0', s: )}
-  - F12
+  - {t: '-', s: _}
   - $$mdi:keyboard-tab$$
   - Q
   - W
@@ -165,8 +165,8 @@ layers:
   - {t: '$$mdi:keyboard-return$$', type: enter}
   - {t: '$$mdi:keyboard-return$$', type: enter}
   - $$mdi:keyboard-space$$
-  - '&mkp MB1'
-  - {t: default, type: held}
+  - '&mkp MB2'
+  - {t: default, h: toggle, type: held}
   - {t: '[', s: '{'}
   - {t: ']', s: '}'}
   - {t: \, s: '|'}
