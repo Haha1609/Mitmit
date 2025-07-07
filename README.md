@@ -1,10 +1,16 @@
-Mitmit 84 keys layout include Ano switch (5 buttons + rotary encoder) on both side. 
+Mitmit 84 keys layout include Ano switch (5 buttons + rotary encoder) on both side.
+
+Mit is my cat's name :) 
+
+I made some mistakes and damaged several components while building this keyboard. If you appreciate my work, please consider donating—even just $1 would help me recover from the losses. Thank you so much for your support!
+
+paypal.me/99001194
 
 #ZMK STUDIO auto enable, no lock key needed.
 
 #Split keyboard
 
-#Wireless
+#Wireless #Bluetooth #BLE
 
 #Super Mini Nrf52840 Pro Micro - #Nice! Nano v2 compatible
 
