@@ -41,11 +41,11 @@ Right Side overlay:
 
   Depends on the direct key's position relative to the right shield:
   
-  -If the direct key is to the left of the right shield, use:
+  -If the direct key is on the left of the right shield, use:
   
     row-offset = <target row - 1>;
     
-  -If it's not to the left (same or right), use:
+  -If it's not on the left (same or right), use:
   
     row-offset = <target row>;
     
