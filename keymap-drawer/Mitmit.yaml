@@ -178,49 +178,49 @@ layers:
   - F4
   - F5
   - $$mdi:arrow-up-bold$$
-  - {t: '$$mdi:menu-up$$', s: '$$mdi:mouse$$'}
+  - $$mdi:pan-up$$
   - F6
   - F7
   - F8
   - F9
   - F10
-  - F11
-  - {t: '-', s: _}
+  - {t: F11, h: F12}
+  - {t: '`', s: '~'}
   - {t: '1', s: '!'}
   - {t: '2', s: '@'}
   - {t: '3', s: '#'}
   - {t: '4', s: $}
   - {t: '5', s: '%'}
   - $$mdi:arrow-right-bold$$
-  - {t: '$$mdi:menu-left$$', s: '$$mdi:mouse$$'}
+  - $$mdi:pan-left$$
   - {t: '6', s: ^}
   - {t: '7', s: '&'}
   - {t: '8', s: '*'}
   - {t: '9', s: (}
   - {t: '0', s: )}
-  - {t: '=', s: +}
+  - {t: '-', s: _}
   - $$mdi:keyboard-tab$$
   - Q
   - W
   - E
   - R
   - T
-  - PLAY PAUSE
-  - $$mdi:mouse-scroll-wheel$$
+  - $$mdi:bluetooth-off$$
+  - '&mkp MB1'
   - Y
   - U
   - I
   - O
   - P
   - {t: '$$mdi:backspace$$', type: backspace}
-  - Ins
+  - $$mdi:apple-keyboard-caps$$
   - A
   - S
   - D
   - F
   - G
   - $$mdi:arrow-left-bold$$
-  - {t: '$$mdi:menu-right$$', s: '$$mdi:mouse$$'}
+  - $$mdi:pan-right$$
   - H
   - J
   - K
@@ -234,7 +234,7 @@ layers:
   - V
   - B
   - $$mdi:arrow-down-bold$$
-  - {t: '$$mdi:menu-down$$', s: '$$mdi:mouse$$'}
+  - $$mdi:pan-down$$
   - N
   - M
   - {t: ',', s: <}
@@ -244,17 +244,17 @@ layers:
   - $$mdi:apple-keyboard-control$$
   - LGUI
   - $$mdi:apple-keyboard-option$$
-  - $$mdi:backspace-reverse-outline$$
+  - {t: raise, h: toggle}
+  - Gui+$$mdi:keyboard-space$$
+  - $$mdi:keyboard-space$$
+  - {t: '$$mdi:keyboard-return$$', type: enter}
   - {t: '$$mdi:keyboard-return$$', type: enter}
   - $$mdi:keyboard-space$$
-  - '&mkp MB1'
   - '&mkp MB2'
-  - $$mdi:keyboard-space$$
-  - {t: '$$mdi:keyboard-return$$', type: enter}
-  - lower
-  - Ctl+C
-  - Ctl+V
-  - {t: V, h: '$$mdi:apple-keyboard-command$$'}
+  - {t: default, h: toggle}
+  - {t: '[', s: '{'}
+  - {t: ']', s: '}'}
+  - {t: \, s: '|'}
   adjust:
   - $$mdi:keyboard-esc$$
   - F1
@@ -263,49 +263,49 @@ layers:
   - F4
   - F5
   - $$mdi:arrow-up-bold$$
-  - {t: '$$mdi:menu-up$$', s: '$$mdi:mouse$$'}
+  - $$mdi:pan-up$$
   - F6
   - F7
   - F8
   - F9
   - F10
-  - F11
-  - {t: '-', s: _}
+  - {t: F11, h: F12}
+  - {t: '`', s: '~'}
   - {t: '1', s: '!'}
   - {t: '2', s: '@'}
   - {t: '3', s: '#'}
   - {t: '4', s: $}
   - {t: '5', s: '%'}
   - $$mdi:arrow-right-bold$$
-  - {t: '$$mdi:menu-left$$', s: '$$mdi:mouse$$'}
+  - $$mdi:pan-left$$
   - {t: '6', s: ^}
   - {t: '7', s: '&'}
   - {t: '8', s: '*'}
   - {t: '9', s: (}
   - {t: '0', s: )}
-  - {t: '=', s: +}
+  - {t: '-', s: _}
   - $$mdi:keyboard-tab$$
   - Q
   - W
   - E
   - R
   - T
-  - PLAY PAUSE
-  - $$mdi:mouse-scroll-wheel$$
+  - $$mdi:bluetooth-off$$
+  - '&mkp MB1'
   - Y
   - U
   - I
   - O
   - P
   - {t: '$$mdi:backspace$$', type: backspace}
-  - Ins
+  - $$mdi:apple-keyboard-caps$$
   - A
   - S
   - D
   - F
   - G
   - $$mdi:arrow-left-bold$$
-  - {t: '$$mdi:menu-right$$', s: '$$mdi:mouse$$'}
+  - $$mdi:pan-right$$
   - H
   - J
   - K
@@ -319,7 +319,7 @@ layers:
   - V
   - B
   - $$mdi:arrow-down-bold$$
-  - {t: '$$mdi:menu-down$$', s: '$$mdi:mouse$$'}
+  - $$mdi:pan-down$$
   - N
   - M
   - {t: ',', s: <}
@@ -329,17 +329,17 @@ layers:
   - $$mdi:apple-keyboard-control$$
   - LGUI
   - $$mdi:apple-keyboard-option$$
-  - $$mdi:backspace-reverse-outline$$
+  - {t: raise, h: toggle}
+  - Gui+$$mdi:keyboard-space$$
+  - $$mdi:keyboard-space$$
+  - {t: '$$mdi:keyboard-return$$', type: enter}
   - {t: '$$mdi:keyboard-return$$', type: enter}
   - $$mdi:keyboard-space$$
-  - '&mkp MB1'
   - '&mkp MB2'
-  - $$mdi:keyboard-space$$
-  - {t: '$$mdi:keyboard-return$$', type: enter}
-  - lower
-  - Ctl+C
-  - Ctl+V
-  - {t: V, h: '$$mdi:apple-keyboard-command$$'}
+  - {t: default, h: toggle}
+  - {t: '[', s: '{'}
+  - {t: ']', s: '}'}
+  - {t: \, s: '|'}
   function:
   - $$mdi:keyboard-esc$$
   - F1
@@ -348,49 +348,49 @@ layers:
   - F4
   - F5
   - $$mdi:arrow-up-bold$$
-  - {t: '$$mdi:menu-up$$', s: '$$mdi:mouse$$'}
+  - $$mdi:pan-up$$
   - F6
   - F7
   - F8
   - F9
   - F10
-  - F11
-  - {t: '-', s: _}
+  - {t: F11, h: F12}
+  - {t: '`', s: '~'}
   - {t: '1', s: '!'}
   - {t: '2', s: '@'}
   - {t: '3', s: '#'}
   - {t: '4', s: $}
   - {t: '5', s: '%'}
   - $$mdi:arrow-right-bold$$
-  - {t: '$$mdi:menu-left$$', s: '$$mdi:mouse$$'}
+  - $$mdi:pan-left$$
   - {t: '6', s: ^}
   - {t: '7', s: '&'}
   - {t: '8', s: '*'}
   - {t: '9', s: (}
   - {t: '0', s: )}
-  - {t: '=', s: +}
+  - {t: '-', s: _}
   - $$mdi:keyboard-tab$$
   - Q
   - W
   - E
   - R
   - T
-  - PLAY PAUSE
-  - $$mdi:mouse-scroll-wheel$$
+  - $$mdi:bluetooth-off$$
+  - '&mkp MB1'
   - Y
   - U
   - I
   - O
   - P
   - {t: '$$mdi:backspace$$', type: backspace}
-  - Ins
+  - $$mdi:apple-keyboard-caps$$
   - A
   - S
   - D
   - F
   - G
   - $$mdi:arrow-left-bold$$
-  - {t: '$$mdi:menu-right$$', s: '$$mdi:mouse$$'}
+  - $$mdi:pan-right$$
   - H
   - J
   - K
@@ -404,7 +404,7 @@ layers:
   - V
   - B
   - $$mdi:arrow-down-bold$$
-  - {t: '$$mdi:menu-down$$', s: '$$mdi:mouse$$'}
+  - $$mdi:pan-down$$
   - N
   - M
   - {t: ',', s: <}
@@ -414,14 +414,14 @@ layers:
   - $$mdi:apple-keyboard-control$$
   - LGUI
   - $$mdi:apple-keyboard-option$$
-  - $$mdi:backspace-reverse-outline$$
+  - {t: raise, h: toggle}
+  - Gui+$$mdi:keyboard-space$$
+  - $$mdi:keyboard-space$$
+  - {t: '$$mdi:keyboard-return$$', type: enter}
   - {t: '$$mdi:keyboard-return$$', type: enter}
   - $$mdi:keyboard-space$$
-  - '&mkp MB1'
   - '&mkp MB2'
-  - $$mdi:keyboard-space$$
-  - {t: '$$mdi:keyboard-return$$', type: enter}
-  - lower
-  - Ctl+C
-  - Ctl+V
-  - {t: V, h: '$$mdi:apple-keyboard-command$$'}
+  - {t: default, h: toggle}
+  - {t: '[', s: '{'}
+  - {t: ']', s: '}'}
+  - {t: \, s: '|'}
