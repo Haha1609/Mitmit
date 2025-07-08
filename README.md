@@ -1,4 +1,4 @@
-Mitmit 84 keys layout include Ano switch (5 buttons + rotary encoder) on both side.
+Mitmit 84 keys layout include Ano switch (5 buttons + rotary encoder) on both sides.
 
 Mit is my cat's name :) 
 
