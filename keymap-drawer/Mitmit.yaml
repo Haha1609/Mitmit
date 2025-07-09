@@ -35,8 +35,8 @@ layers:
   - E
   - R
   - T
-  - {t: KP ENTER, h: PLAY PAUSE}
   - '&mkp MB3'
+  - {t: '$$mdi:keyboard-return$$', h: PLAY PAUSE}
   - Y
   - U
   - I
