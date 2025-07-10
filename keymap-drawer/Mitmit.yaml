@@ -84,7 +84,7 @@ layers:
   - lower
   - {t: Ctl+C, h: Ctl+X}
   - {t: Ctl+V, h: V}
-  - {t: V, h: '$$mdi:apple-keyboard-command$$'}
+  - {t: Ctl+KP PLUS, h: Ctl+KP MINUS}
   lower:
   - $$mdi:keyboard-esc$$
   - F1
