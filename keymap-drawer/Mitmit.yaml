@@ -43,7 +43,7 @@ layers:
   - O
   - P
   - {t: KP PLUS, h: '='}
-  - Ins
+  - {t: INS, h: PAUSE}
   - A
   - S
   - D
@@ -82,8 +82,8 @@ layers:
   - $$mdi:keyboard-space$$
   - '&mkp MB2'
   - lower
-  - Ctl+C
-  - Ctl+V
+  - {t: Ctl+C, h: Ctl+X}
+  - {t: Ctl+V, h: V}
   - {t: V, h: '$$mdi:apple-keyboard-command$$'}
   lower:
   - $$mdi:keyboard-esc$$
