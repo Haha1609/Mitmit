@@ -43,7 +43,7 @@ layers:
   - O
   - P
   - {t: KP PLUS, h: '='}
-  - {t: INS, h: PAUSE}
+  - {t: INS, h: PAUSE BREAK}
   - A
   - S
   - D
