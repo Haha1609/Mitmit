@@ -54,12 +54,12 @@ As such, those are in use within the default layer at this time.*/
 
         default_layer {
             bindings = <
-&mt CAPS ESC     &kp F1    &kp F2    &kp F3   &kp F4    &kp F5     &kp UP     &msc SCRL_UP            &kp F6     &kp F7    &kp F8     &kp F9           &kp F10          &mt F12 F11
-&kp GRAVE        &kp N1    &kp N2    &kp N3   &kp N4    &kp N5     &kp RIGHT  &mkp MB4                &kp N6     &kp N7    &kp N8     &kp N9           &kp N0           &kp MINUS
-&mt LS(TAB) TAB  &kp Q     &kp W     &kp E    &kp R     &kp T      &mkp MB3   &mt C_PLAY_PAUSE ENTER  &kp Y      &kp U     &kp I      &kp O            &kp P            &mt EQUAL KP_PLUS
-&mt C_PAUSE INS  &kp A     &kp S     &kp D    &kp F     &kp G      &kp LEFT   &mkp MB5                &kp H      &kp J     &kp K      &kp L            &kp SEMI         &kp APOS
-&kp LSHFT        &kp Z     &kp X     &kp C    &kp V     &kp B      &kp DOWN   &msc SCRL_DOWN          &kp N      &kp M     &kp COMMA  &kp DOT          &kp FSLH         &mt RSHIFT KP_ENTER
-&kp LCTRL        &kp LGUI  &kp LALT  &kp DEL  &kp BSPC  &kp SPACE  &mkp MB1   &kp BACKSPACE           &kp SPACE  &mkp MB2  &mo 1      &mt LC(X) LC(C)  &mt LG(V) LC(V)  &kp LG(V)
+&mt CAPS ESC     &kp F1    &kp F2    &kp F3   &kp F4    &kp F5     &kp UP                  &msc SCRL_UP    &kp F6     &kp F7    &kp F8     &kp F9           &kp F10          &mt F12 F11
+&kp GRAVE        &kp N1    &kp N2    &kp N3   &kp N4    &kp N5     &kp RIGHT               &mkp MB4        &kp N6     &kp N7    &kp N8     &kp N9           &kp N0           &kp MINUS
+&mt LS(TAB) TAB  &kp Q     &kp W     &kp E    &kp R     &kp T      &mt C_PLAY_PAUSE ENTER  &mkp MB3        &kp Y      &kp U     &kp I      &kp O            &kp P            &mt EQUAL KP_PLUS
+&mt C_PAUSE INS  &kp A     &kp S     &kp D    &kp F     &kp G      &kp LEFT                &mkp MB5        &kp H      &kp J     &kp K      &kp L            &kp SEMI         &kp APOS
+&kp LSHFT        &kp Z     &kp X     &kp C    &kp V     &kp B      &kp DOWN                &msc SCRL_DOWN  &kp N      &kp M     &kp COMMA  &kp DOT          &kp FSLH         &mt RSHIFT KP_ENTER
+&kp LCTRL        &kp LGUI  &kp LALT  &kp DEL  &kp BSPC  &kp SPACE  &mkp MB1                &kp BACKSPACE   &kp SPACE  &mkp MB2  &mo 1      &mt LC(X) LC(C)  &mt LG(V) LC(V)  &kp LG(V)
             >;
 
             sensor-bindings =
