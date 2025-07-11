@@ -6,6 +6,7 @@
     zmk,kscan = &kscan_composite;
     zmk,physical-layout = &physical_layout;
     zmk,battery = &vbatt;
+	zephyr,console = &cdc_acm_uart;
     };
 	
 	default_transform: keymap_transform_0 {
@@ -79,6 +80,15 @@
 	       init-delay-ms = <50>;
 	    };
 	
+};
+
+// Allow USB logging
+&usbd {
+	status = "okay";
+	cdc_acm_uart: cdc_acm_uart {
+		compatible = "zephyr,cdc-acm-uart";
+		label = "CDC_ACM_0";
+	};
 };
 
  &physical_layout {
