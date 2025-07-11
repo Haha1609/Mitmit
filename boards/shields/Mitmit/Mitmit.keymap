@@ -1,1 +1,14 @@
 config/Mitmit.keymap
+
+// Warning:
+// This is the keymap file under the `zmk-config/boards/shields//`
+// directory.
+//
+// It's the default keymap that is only used if you don't have a custom one
+// in zmk-config/config/.keymap.
+//
+// Instead of making changes to this keymap, you should edit the config
+// mentioned above.
+//
+// If that one doesn't exist, copy this file to
+// `zmk-config/config/your_keyboard.keymap` and make all keymap changes there.

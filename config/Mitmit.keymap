@@ -18,10 +18,35 @@
 #define RAISE  2
 #define ADJUST 3
 #define FUNCTION 4
+#define MOUSE_TP 5
+#define MOUSE_TP_SET 6
+
 
 /* NOTE: At the time of the creation of this keymap, there are no specified codes for 'eisuu' and 'kana' input in ZMK.
 However, 'LANG1' and 'LANG2' are fully-functioning candidates for 'kana' and 'eisuu' input respectively.
 As such, those are in use within the default layer at this time.*/
+
+
+#define HAS_MOUSE_TP
+
+
+#ifdef HAS_MOUSE_TP
+  // We store the trackpoint settings in a separate file
+  // to make organization a little easier.
+  #include "include/mouse_tp.dtsi"
+#endif  // HAS_MOUSE_TP
+
+// Adjust layer keys based on enabled features.
+//
+// This prevents build errors when we build the firmware
+// without the mouse keys PR or the TP module.
+
+#ifdef HAS_MOUSE_TP
+  #define U_TOG_TP_SET &tog MOUSE_TP_SET
+#else
+  #define U_TOG_TP_SET &none
+#endif  // HAS_MOUSE_TP
+
 
 &mmv_input_listener { input-processors = <&zip_xy_scaler 2 1>; };
 
@@ -118,5 +143,39 @@ As such, those are in use within the default layer at this time.*/
 
             sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP &inc_dec_kp PG_DN PG_UP>;
         };
+
+
+        #ifdef HAS_MOUSE_TP
+
+    // Automatically activated when the mouse or trackpoint moves.
+    // Configured in `include/mouse_tp.dtsi`.
+    MouseTP_layer {
+      display-name = "TP";
+      bindings = <
+    &none	&none	        &none	        &none	&none	&none	&none				        &none	&none	&none	&none	&none	        &none	        &none
+    &none	U_TOG_TP_SET	U_TOG_TP_SET	&none	&none	&none	&none				        &none	&none	&none	&none	U_TOG_TP_SET	U_TOG_TP_SET	&none
+    &none	&none	        &none	        &none	&none	&none           &none		&none           &none	&none	&none	&none	        &none	        &none
+    &none	&none	        &none	        &none	&none	&none	&none				        &none	&none	&none	&none	&none	        &none	        &none
+    &none	&none	        &none	        &none	&none	&none	&none				        &none	&none	&none	&none	&none	        &none	        &none
+    &none	&none	        &none	        &none	&none	&none	&none				        &none	&none	&none	&none	&none	        &none	        &none
+     >;
+    };
+
+    // You can find the defines for the actual key press behaviors in `include/mouse_tp.dtsi`.
+    MouseSettings_layer {
+      display-name = "TP Set";
+      bindings = <
+        &none	&none	        &none	        &none	        &none	        &none	        &none				    &none	&none	        &none	        &none	        &none	        &none	        &none
+        &none	U_TOG_TP_SET	U_TOG_TP_SET	U_MSS_TP_S_D	U_MSS_TP_S_I	U_MSS_TP_PT_I	&none				    &none	U_MSS_TP_PT_I	U_MSS_TP_S_I	U_MSS_TP_S_D	U_TOG_TP_SET	U_TOG_TP_SET	&none
+        &none	U_MSS_RESET 	U_MSS_RESET 	U_MSS_TP_NI_D	U_MSS_TP_NI_I	U_MSS_TP_PT_D           &none   &none		    U_MSS_TP_PT_D	U_MSS_TP_NI_I	U_MSS_TP_NI_D	U_MSS_RESET 	U_MSS_RESET 	&none
+        &none	U_MSS_LOG	    U_MSS_LOG	    U_MSS_TP_V6_D	U_MSS_TP_V6_I	&none	        &none				    &none	&none	        U_MSS_TP_V6_I	U_MSS_TP_V6_D	U_MSS_LOG	    U_MSS_LOG	    &none
+        &none	&none	        &none	        &none	        &none	        &none	        &none				    &none	&none	        &none	        &none	        &none	        &none	        &none
+        &none	&none	        &none	        &none	        &none	        &none	        &none				    &none	&none	        &none	        &none	        &none	        &none	        &none
+        
+       >;
+    };
+
+#endif
     };
 };
+
