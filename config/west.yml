@@ -1,16 +1,19 @@
 manifest:
   remotes:
-    - name: zmkfirmware
-      url-base: https://github.com/petejohanson
+    - name: Haha1609
+      url-base: https://github.com/Haha1609  
     - name: inorichi
       url-base: https://github.com/charlesmst # fork of inorichi
+
   projects:
     - name: zmk
-      remote: zmkfirmware
+      remote: Haha1609
       revision: feat/pointers-move-scroll
       import: app/west.yml
+
     - name: zmk-pmw3610-driver
       remote: inorichi
       revision: main
+      
   self:
     path: config
