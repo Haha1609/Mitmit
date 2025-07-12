@@ -13,8 +13,8 @@ manifest:
       url-base: https://github.com/urob
 
   projects:
-    - name: zmk
-      remote: infused-kim
+    - name: zmk-ps2-trackpoint
+      remote: Haha1609
       revision: pr-testing/mouse_ps2_module_base
       import: app/west.yml
 
