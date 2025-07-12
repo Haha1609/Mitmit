@@ -1,6 +1,6 @@
 manifest:
   remotes:
-     - name: zmkfirmware
+    - name: zmkfirmware
       url-base: https://github.com/petejohanson
     - name: inorichi
       url-base: https://github.com/charlesmst # fork of inorichi
