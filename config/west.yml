@@ -12,6 +12,9 @@ manifest:
     - name: urob
       url-base: https://github.com/urob
 
+    - name: Haha1609
+      url-base: https://github.com/Haha1609
+
   projects:
     - name: zmk-ps2-trackpoint
       remote: Haha1609
