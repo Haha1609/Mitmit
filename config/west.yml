@@ -7,12 +7,12 @@ manifest:
       url-base: https://github.com/infused-kim
 
     - name: Haha1609
-      url-base: https://github.com/Haha1609    //my url//
+      url-base: https://github.com/Haha1609  
 
   projects:
-    - name: zmk    //my forked repo//
+    - name: zmk    
       remote: Haha1609
-      revision: pr-testing/mouse_ps2_module_base  //the branch//
+      revision: pr-testing/mouse_ps2_module_base 
       import: app/west.yml
 
     # Module for PS/2 mouse & TP driver
