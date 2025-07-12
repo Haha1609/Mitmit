@@ -1,5 +1,7 @@
 Mitmit 84 keys layout include Ano switch (5 buttons + rotary encoder) on both sides.
 
+RIGHT HALF AS CENTRAL
+
 Mit is my cat's name :) 
 
 I made some mistakes and damaged several components while building this keyboard. If you appreciate my work, please consider donating—even just $1 would help me recover from the losses. Thank you so much for your support!
