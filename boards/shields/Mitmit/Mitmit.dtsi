@@ -6,7 +6,7 @@
     zmk,kscan = &kscan_composite;
     zmk,physical-layout = &physical_layout;
     zmk,battery = &vbatt;
-	zephyr,console = &cdc_acm_uart;
+//	zephyr,console = &cdc_acm_uart;
     };
 	
 	default_transform: keymap_transform_0 {
