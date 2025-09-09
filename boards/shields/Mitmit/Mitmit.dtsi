@@ -82,14 +82,14 @@
 	
 };
 
-// Allow USB logging
-&usbd {
-	status = "okay";
-	cdc_acm_uart: cdc_acm_uart {
-		compatible = "zephyr,cdc-acm-uart";
-		label = "CDC_ACM_0";
-	};
-};
+// Allow USB logging uncomment to use it
+// &usbd {
+//	status = "okay";
+//	cdc_acm_uart: cdc_acm_uart {
+//		compatible = "zephyr,cdc-acm-uart";
+//		label = "CDC_ACM_0";
+//	};
+//};
 
  &physical_layout {
     transform = <&default_transform>;
