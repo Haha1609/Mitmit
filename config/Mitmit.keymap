@@ -55,6 +55,8 @@ As such, those are in use within the default layer at this time.*/
             label = "MOUSESCROLL";
             #sensor-binding-cells = <0>;
             bindings = <&msc SCRL_UP>, <&msc SCRL_DOWN>;
+
+            tap-ms = <20>;
         };
     };
 
