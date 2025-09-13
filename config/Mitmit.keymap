@@ -49,6 +49,15 @@ As such, those are in use within the default layer at this time.*/
 };
 
 / {
+    behaviors {
+        MouseScroll: MouseScroll {
+            compatible = "zmk,behavior-sensor-rotate";
+            label = "MOUSESCROLL";
+            #sensor-binding-cells = <0>;
+            bindings = <&msc SCRL_UP>, <&msc SCRL_DOWN>;
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
@@ -62,9 +71,7 @@ As such, those are in use within the default layer at this time.*/
 &kp LCTRL            &kp LGUI  &kp LALT  &kp DEL  &kp BSPC  &kp SPACE  &mkp MB1                &kp BACKSPACE   &kp SPACE  &mkp MB2  &mo 1      &mt LC(X) LC(C)  &mt LG(V) LC(V)  &mt LC(KP_MINUS) LC(KP_PLUS)
             >;
 
-            sensor-bindings =
-                <&inc_dec_kp PAGE_DOWN PAGE_UP>,
-                <&inc_dec_kp C_VOL_UP C_VOL_DN>;
+            sensor-bindings = <&MouseScroll>, <&inc_dec_kp C_VOL_UP C_VOL_DN>;
         };
 
         lower_layer {
