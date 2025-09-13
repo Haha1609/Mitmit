@@ -53,7 +53,6 @@ As such, those are in use within the default layer at this time.*/
         MouseScroll: MouseScroll {
             compatible = "zmk,behavior-sensor-rotate";
             label = "MOUSESCROLL";
-            #sensor-binding-cells = <0>;
             bindings = <&msc SCRL_UP>, <&msc SCRL_DOWN>;
         };
     };
