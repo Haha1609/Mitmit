@@ -50,7 +50,7 @@ As such, those are in use within the default layer at this time.*/
 
 
 
-#define ZMK_MOUSE_SCRL_VAL 140
+#define ZMK_POINTING_DEFAULT_SCRL_VAL 100
 
 
 
@@ -61,7 +61,6 @@ As such, those are in use within the default layer at this time.*/
             label = "MOUSESCROLL";
             #sensor-binding-cells = <0>;
             bindings = <&msc SCRL_UP>, <&msc SCRL_DOWN>;
-
             tap-ms = <20>;
         };
     };
