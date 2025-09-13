@@ -8,7 +8,7 @@ layers:
   - F4
   - F5
   - $$mdi:arrow-up-bold$$
-  - $$mdi:pan-up$$
+  - $$mdi:arrow-up-bold$$
   - F6
   - F7
   - F8
@@ -64,7 +64,7 @@ layers:
   - V
   - B
   - $$mdi:arrow-down-bold$$
-  - $$mdi:pan-down$$
+  - $$mdi:arrow-down-bold$$
   - N
   - M
   - {t: ',', s: <}
