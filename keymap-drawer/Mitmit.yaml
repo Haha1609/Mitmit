@@ -15,7 +15,7 @@ layers:
   - F9
   - F10
   - {t: F11, h: F12}
-  - {t: '`', s: '~'}
+  - {t: '`', h: '-', s: '~'}
   - {t: '1', s: '!'}
   - {t: '2', s: '@'}
   - {t: '3', s: '#'}
@@ -76,10 +76,10 @@ layers:
   - $$mdi:apple-keyboard-option$$
   - $$mdi:backspace-reverse-outline$$
   - {t: '$$mdi:backspace$$', type: backspace}
-  - $$mdi:keyboard-space$$
-  - '&mkp MB1'
+  - {t: '$$mdi:keyboard-space$$', h: lower}
+  - '&mkp MB2'
   - {t: '$$mdi:backspace$$', type: backspace}
-  - $$mdi:keyboard-space$$
+  - {t: '$$mdi:keyboard-space$$', h: lower}
   - '&mkp MB2'
   - lower
   - {t: Ctl+C, h: Ctl+X}
@@ -100,12 +100,12 @@ layers:
   - F9
   - F10
   - {t: F11, h: F12}
-  - {t: '`', s: '~'}
-  - {t: '1', s: '!'}
-  - {t: '2', s: '@'}
-  - {t: '3', s: '#'}
-  - {t: '4', s: $}
-  - {t: '5', s: '%'}
+  - {t: '0', s: )}
+  - {t: '6', s: ^}
+  - {t: '7', s: '&'}
+  - {t: '8', s: '*'}
+  - {t: '9', s: (}
+  - {t: '0', s: )}
   - $$mdi:arrow-right-bold$$
   - $$mdi:pan-left$$
   - {t: '6', s: ^}
@@ -115,11 +115,11 @@ layers:
   - {t: '0', s: )}
   - {t: '-', s: _}
   - $$mdi:keyboard-tab$$
-  - Q
-  - W
-  - E
-  - R
-  - T
+  - Y
+  - U
+  - I
+  - O
+  - P
   - $$mdi:bluetooth-off$$
   - '&mkp MB1'
   - Y
@@ -129,11 +129,11 @@ layers:
   - P
   - {t: '$$mdi:backspace$$', type: backspace}
   - $$mdi:apple-keyboard-caps$$
-  - A
-  - S
-  - D
-  - F
-  - G
+  - H
+  - J
+  - K
+  - L
+  - {t: ;, s: ':'}
   - $$mdi:arrow-left-bold$$
   - $$mdi:pan-right$$
   - H
@@ -143,11 +143,11 @@ layers:
   - {t: ;, s: ':'}
   - {t: '''', s: '"'}
   - $$mdi:apple-keyboard-shift$$
-  - Z
-  - X
-  - C
-  - V
-  - B
+  - N
+  - M
+  - {t: ',', s: <}
+  - {t: ., s: '>'}
+  - {t: /, s: '?'}
   - $$mdi:arrow-down-bold$$
   - $$mdi:pan-down$$
   - N
@@ -161,12 +161,12 @@ layers:
   - $$mdi:apple-keyboard-option$$
   - {t: raise, h: toggle}
   - Gui+$$mdi:keyboard-space$$
-  - $$mdi:keyboard-space$$
+  - {t: '$$mdi:keyboard-space$$', type: held}
   - {t: '$$mdi:keyboard-return$$', type: enter}
   - {t: '$$mdi:keyboard-return$$', type: enter}
-  - $$mdi:keyboard-space$$
+  - {t: '$$mdi:keyboard-space$$', type: held alternate}
   - '&mkp MB2'
-  - {t: default, h: toggle, type: held}
+  - {t: default, h: toggle, type: held alternate}
   - {t: '[', s: '{'}
   - {t: ']', s: '}'}
   - {t: \, s: '|'}
