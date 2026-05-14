@@ -45,7 +45,7 @@ As such, those are in use within the default layer at this time.*/
 
 &mt {
     tapping-term-ms = <300>;
-    flavor = "balanced";
+    flavor = "tap-preferred";
 };
 
 #define ZMK_POINTING_DEFAULT_SCRL_VAL 500   // mouse scroll sensitive
@@ -81,7 +81,7 @@ As such, those are in use within the default layer at this time.*/
         lower_layer {
             bindings = <
 &kp ESC    &kp F1    &kp F2    &kp F3     &kp F4         &kp F5     &kp UP      &msc SCRL_UP     &kp F6     &kp F7    &kp F8     &kp F9    &kp F10   &mt F12 F11
-&kp N0     &kp N6    &kp N7    &kp N8     &kp N9         &kp N0     &kp RIGHT   &msc SCRL_LEFT   &kp N6     &kp N7    &kp N8     &kp N9    &kp N0    &kp MINUS
+&kp MINUS  &kp N6    &kp N7    &kp N8     &kp N9         &kp N0     &kp RIGHT   &msc SCRL_LEFT   &kp N6     &kp N7    &kp N8     &kp N9    &kp N0    &kp MINUS
 &kp TAB    &kp Y     &kp U     &kp I      &kp O          &kp P      &bt BT_CLR  &mkp MB1         &kp Y      &kp U     &kp I      &kp O     &kp P     &kp BSPC
 &kp CAPS   &kp H     &kp J     &kp K      &kp L          &kp SEMI   &kp LEFT    &msc SCRL_RIGHT  &kp H      &kp J     &kp K      &kp L     &kp SEMI  &kp APOS
 &kp LSHFT  &kp N     &kp M     &kp COMMA  &kp DOT        &kp FSLH   &kp DOWN    &msc SCRL_DOWN   &kp N      &kp M     &kp COMMA  &kp DOT   &kp FSLH  &kp RSHFT
