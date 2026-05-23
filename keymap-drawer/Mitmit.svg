@@ -736,6 +736,10 @@ rect.held, rect.combo.held {
 </text>
 <text x="0" y="24" class="key hold"><tspan style="font-size: 60%">Ctl+KP MI…</tspan></text>
 </g>
+<g class="combo combopos-0">
+<rect rx="6" ry="6" x="924" y="159" width="28" height="26" class="combo"/>
+<text x="938" y="172" class="combo tap"><tspan style="font-size: 60%">&amp;Upright45</tspan></text>
+</g>
 </g>
 </g>
 <g transform="translate(40, 413)" class="layer-lower">
@@ -1194,6 +1198,10 @@ rect.held, rect.combo.held {
 <text x="0" y="-4" class="key tap">\</text>
 <text x="0" y="-24" class="key shifted">|</text>
 </g>
+<g class="combo combopos-0">
+<rect rx="6" ry="6" x="924" y="159" width="28" height="26" class="combo"/>
+<text x="938" y="172" class="combo tap"><tspan style="font-size: 60%">&amp;Upright45</tspan></text>
+</g>
 </g>
 </g>
 <g transform="translate(40, 827)" class="layer-raise">
@@ -1647,6 +1655,10 @@ rect.held, rect.combo.held {
 <rect rx="4" ry="4" x="-20" y="-24" width="40" height="40" class="key"/>
 <text x="0" y="-4" class="key tap">\</text>
 <text x="0" y="-24" class="key shifted">|</text>
+</g>
+<g class="combo combopos-0">
+<rect rx="6" ry="6" x="924" y="159" width="28" height="26" class="combo"/>
+<text x="938" y="172" class="combo tap"><tspan style="font-size: 60%">&amp;Upright45</tspan></text>
 </g>
 </g>
 </g>
@@ -2102,6 +2114,10 @@ rect.held, rect.combo.held {
 <text x="0" y="-4" class="key tap">\</text>
 <text x="0" y="-24" class="key shifted">|</text>
 </g>
+<g class="combo combopos-0">
+<rect rx="6" ry="6" x="924" y="159" width="28" height="26" class="combo"/>
+<text x="938" y="172" class="combo tap"><tspan style="font-size: 60%">&amp;Upright45</tspan></text>
+</g>
 </g>
 </g>
 <g transform="translate(40, 1653)" class="layer-function">
@@ -2555,6 +2571,10 @@ rect.held, rect.combo.held {
 <rect rx="4" ry="4" x="-20" y="-24" width="40" height="40" class="key"/>
 <text x="0" y="-4" class="key tap">\</text>
 <text x="0" y="-24" class="key shifted">|</text>
+</g>
+<g class="combo combopos-0">
+<rect rx="6" ry="6" x="924" y="159" width="28" height="26" class="combo"/>
+<text x="938" y="172" class="combo tap"><tspan style="font-size: 60%">&amp;Upright45</tspan></text>
 </g>
 </g>
 </g>
