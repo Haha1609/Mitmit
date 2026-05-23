@@ -62,6 +62,24 @@ As such, those are in use within the default layer at this time.*/
         };
     };
 
+    combos {
+        compatible = "zmk,combos";
+
+        UR45 {
+            bindings = <&Upright45>;
+            key-positions = <52 39>;
+        };
+    };
+
+    macros {
+        Upright45: Upright45 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&mmv MOVE_UP &mmv MOVE_RIGHT>;
+            label = "UPRIGHT45";
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
