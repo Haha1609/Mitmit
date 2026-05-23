@@ -75,7 +75,11 @@ As such, those are in use within the default layer at this time.*/
         Upright45: Upright45 {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&mmv MOVE_UP &mmv MOVE_RIGHT>;
+            bindings =
+                <&macro_press>,
+                <&mmv MOVE_UP &mmv MOVE_RIGHT>,
+                <&macro_release>;
+
             label = "UPRIGHT45";
         };
     };
