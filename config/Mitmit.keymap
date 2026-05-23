@@ -76,10 +76,8 @@ As such, those are in use within the default layer at this time.*/
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings =
-                <&macro_press>,
-                <&mmv MOVE_UP &mmv MOVE_RIGHT>,
-                <&macro_release>;
-
+                <&macro_press &mmv MOVE_UP &mmv MOVE_RIGHT>,
+                <&macro_release &mmv MOVE_UP &mmv MOVE_RIGHT>;
             label = "UPRIGHT45";
         };
     };
