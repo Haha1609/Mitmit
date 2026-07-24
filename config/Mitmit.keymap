@@ -94,6 +94,16 @@ As such, those are in use within the default layer at this time.*/
             bindings = <&kp EQUAL>;
             key-positions = <32 33>;
         };
+
+        bootloadL {
+            bindings = <&bootloader>;
+            key-positions = <0 76>;
+        };
+
+        bootloadR {
+            bindings = <&bootloader>;
+            key-positions = <13 77>;
+        };
     };
 
     macros {
