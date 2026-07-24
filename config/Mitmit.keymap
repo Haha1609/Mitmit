@@ -65,20 +65,43 @@ As such, those are in use within the default layer at this time.*/
     combos {
         compatible = "zmk,combos";
 
-        UR45 {
-            bindings = <&Upright45>;
-            key-positions = <52 39>;
+        screenshot {
+            bindings = <&kp PAUSE_BREAK>;
+            key-positions = <5 1>;
+        };
+
+        dot {
+            bindings = <&kp DOT>;
+            key-positions = <15 16>;
+        };
+
+        comma {
+            bindings = <&kp COMMA>;
+            key-positions = <15 14>;
+        };
+
+        lpar {
+            bindings = <&kp LPAR>;
+            key-positions = <26 27>;
+        };
+
+        rpar {
+            bindings = <&kp RPAR>;
+            key-positions = <27 28>;
+        };
+
+        equal {
+            bindings = <&kp EQUAL>;
+            key-positions = <16 17>;
         };
     };
 
     macros {
-        Upright45: Upright45 {
+        stktech: stktech {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings =
-                <&macro_press &mmv MOVE_UP &mmv MOVE_RIGHT>,
-                <&macro_release &mmv MOVE_UP &mmv MOVE_RIGHT>;
-            label = "UPRIGHT45";
+            bindings = <&kp N9 &kp N9 &kp N9 &kp N9 &kp N0 &kp N0 &kp N1 &kp N1 &kp N9 &kp N4>;
+            label = "STKTECH";
         };
     };
 
