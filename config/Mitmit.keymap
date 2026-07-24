@@ -72,27 +72,27 @@ As such, those are in use within the default layer at this time.*/
 
         dot {
             bindings = <&kp DOT>;
-            key-positions = <15 16>;
+            key-positions = <30 29>;
         };
 
         comma {
             bindings = <&kp COMMA>;
-            key-positions = <15 14>;
+            key-positions = <31 32>;
         };
 
         lpar {
             bindings = <&kp LPAR>;
-            key-positions = <26 27>;
+            key-positions = <44 45>;
         };
 
         rpar {
             bindings = <&kp RPAR>;
-            key-positions = <27 28>;
+            key-positions = <45 46>;
         };
 
         equal {
             bindings = <&kp EQUAL>;
-            key-positions = <16 17>;
+            key-positions = <32 33>;
         };
     };
 
