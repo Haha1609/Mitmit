@@ -81,7 +81,7 @@ layers:
   - {t: '$$mdi:backspace$$', type: backspace}
   - {t: '$$mdi:keyboard-space$$', h: lower}
   - '&mkp MB2'
-  - lower
+  - {t: '$$mdi:backspace-reverse-outline$$', h: lower}
   - {t: Ctl+C, h: Ctl+X}
   - {t: Ctl+V, h: V}
   - {t: Ctl+KP PLUS, h: Ctl+KP MINUS}
