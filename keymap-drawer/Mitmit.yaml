@@ -438,3 +438,7 @@ combos:
   k: )
 - p: [32, 33]
   k: {t: '=', s: +}
+- p: [0, 76]
+  k: $$mdi:progress-download$$
+- p: [13, 77]
+  k: $$mdi:progress-download$$
