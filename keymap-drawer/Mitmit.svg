@@ -45,9 +45,6 @@
 <svg id="mdi:keyboard-tab">
 <svg xmlns="http://www.w3.org/2000/svg" id="mdi-keyboard-tab" viewBox="0 0 24 24"><path d="M20,18H22V6H20M11.59,7.41L15.17,11H1V13H15.17L11.59,16.58L13,18L19,12L13,6L11.59,7.41Z" /></svg>
 </svg>
-<svg id="mdi:keyboard-tab-reverse">
-<svg xmlns="http://www.w3.org/2000/svg" id="mdi-keyboard-tab-reverse" viewBox="0 0 24 24"><path d="M4 6H2V18H4M11 6L5 12L11 18L12.41 16.58L8.83 13H23V11H8.83L12.41 7.41L11 6Z" /></svg>
-</svg>
 <svg id="mdi:pan-down">
 <svg xmlns="http://www.w3.org/2000/svg" id="mdi-pan-down" viewBox="0 0 24 24"><path d="M12,10A2,2 0 0,0 10,12A2,2 0 0,0 12,14A2,2 0 0,0 14,12A2,2 0 0,0 12,10M8,17L12,21.5L16,17H8Z" /></svg>
 </svg>
@@ -432,8 +429,9 @@ rect.held, rect.combo.held {
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key side"/>
 <rect rx="4" ry="4" x="-20" y="-24" width="40" height="40" class="key"/>
 <use href="#mdi:keyboard-tab" xlink:href="#mdi:keyboard-tab" x="-9" y="-13" height="18" width="18.0" class="key tap glyph mdi:keyboard-tab"/>
-<use href="#mdi:keyboard-tab-reverse" xlink:href="#mdi:keyboard-tab-reverse" x="-8" y="9" height="15" width="15.0" class="key hold glyph mdi:keyboard-tab-reverse"/>
-</g>
+<a href="#raise">
+<text x="0" y="24" class="key hold layer-activator">raise</text>
+</a></g>
 <g transform="translate(84, 161)" class="key keypos-29">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key side"/>
 <rect rx="4" ry="4" x="-20" y="-24" width="40" height="40" class="key"/>
@@ -508,9 +506,10 @@ rect.held, rect.combo.held {
 <g transform="translate(28, 217)" class="key keypos-42">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key side"/>
 <rect rx="4" ry="4" x="-20" y="-24" width="40" height="40" class="key"/>
-<text x="0" y="-4" class="key tap">INS</text>
-<text x="0" y="24" class="key hold"><tspan style="font-size: 60%">PAUSE BRE…</tspan></text>
-</g>
+<text x="0" y="-4" class="key tap">F2</text>
+<a href="#lower">
+<text x="0" y="24" class="key hold layer-activator">lower</text>
+</a></g>
 <g transform="translate(84, 217)" class="key keypos-43">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key side"/>
 <rect rx="4" ry="4" x="-20" y="-24" width="40" height="40" class="key"/>
@@ -749,14 +748,14 @@ rect.held, rect.combo.held {
 </text>
 </g>
 <g class="combo combopos-1">
-<rect rx="6" ry="6" x="98" y="141" width="28" height="26" class="combo"/>
-<text x="112" y="154" class="combo tap">.</text>
-<text x="112" y="143" class="combo shifted">&gt;</text>
+<rect rx="6" ry="6" x="210" y="131" width="28" height="26" class="combo"/>
+<text x="224" y="144" class="combo tap">.</text>
+<text x="224" y="133" class="combo shifted">&gt;</text>
 </g>
 <g class="combo combopos-2">
-<rect rx="6" ry="6" x="210" y="131" width="28" height="26" class="combo"/>
-<text x="224" y="144" class="combo tap">,</text>
-<text x="224" y="133" class="combo shifted">&lt;</text>
+<rect rx="6" ry="6" x="154" y="130" width="28" height="26" class="combo"/>
+<text x="168" y="143" class="combo tap">,</text>
+<text x="168" y="132" class="combo shifted">&lt;</text>
 </g>
 <g class="combo combopos-3">
 <rect rx="6" ry="6" x="154" y="187" width="28" height="26" class="combo"/>
@@ -782,6 +781,10 @@ rect.held, rect.combo.held {
 <path d="M910,186 l-154,125" class="combo"/>
 <rect rx="6" ry="6" x="896" y="173" width="28" height="26" class="combo"/>
 <use href="#mdi:progress-download" xlink:href="#mdi:progress-download" x="901" y="177" height="18" width="18.0" class="combo tap glyph mdi:progress-download"/>
+</g>
+<g class="combo combopos-8">
+<rect rx="6" ry="6" x="98" y="29" width="28" height="26" class="combo"/>
+<text x="112" y="42" class="combo tap"><tspan style="font-size: 86%">&amp;gmail1</tspan></text>
 </g>
 </g>
 </g>
@@ -1013,10 +1016,10 @@ rect.held, rect.combo.held {
 <rect rx="4" ry="4" x="-20" y="-24" width="40" height="40" class="key backspace"/>
 <use href="#mdi:backspace" xlink:href="#mdi:backspace" x="-9" y="-13" height="18" width="18.0" class="key backspace tap glyph mdi:backspace"/>
 </g>
-<g transform="translate(28, 217)" class="key keypos-42">
-<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key side"/>
-<rect rx="4" ry="4" x="-20" y="-24" width="40" height="40" class="key"/>
-<use href="#mdi:apple-keyboard-caps" xlink:href="#mdi:apple-keyboard-caps" x="-9" y="-13" height="18" width="18.0" class="key tap glyph mdi:apple-keyboard-caps"/>
+<g transform="translate(28, 217)" class="key held keypos-42">
+<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key held side"/>
+<rect rx="4" ry="4" x="-20" y="-24" width="40" height="40" class="key held"/>
+<use href="#mdi:apple-keyboard-caps" xlink:href="#mdi:apple-keyboard-caps" x="-9" y="-13" height="18" width="18.0" class="key held tap glyph mdi:apple-keyboard-caps"/>
 </g>
 <g transform="translate(84, 217)" class="key keypos-43">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key side"/>
@@ -1189,15 +1192,17 @@ rect.held, rect.combo.held {
 <rect rx="4" ry="4" x="-20" y="-24" width="40" height="40" class="key"/>
 <use href="#mdi:keyboard-space" xlink:href="#mdi:keyboard-space" x="-9" y="-13" height="18" width="18.0" class="key tap glyph mdi:keyboard-space"/>
 </g>
-<g transform="translate(308, 322)" class="key held keypos-75">
-<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key held side"/>
-<rect rx="4" ry="4" x="-20" y="-24" width="40" height="40" class="key held"/>
-<use href="#mdi:keyboard-space" xlink:href="#mdi:keyboard-space" x="-9" y="-13" height="18" width="18.0" class="key held tap glyph mdi:keyboard-space"/>
+<g transform="translate(308, 322)" class="key held alternate keypos-75">
+<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key held alternate side"/>
+<rect rx="4" ry="4" x="-20" y="-24" width="40" height="40" class="key held alternate"/>
+<use href="#mdi:keyboard-space" xlink:href="#mdi:keyboard-space" x="-9" y="-13" height="18" width="18.0" class="key held alternate tap glyph mdi:keyboard-space"/>
 </g>
-<g transform="translate(364, 322)" class="key enter keypos-76">
-<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key enter side"/>
-<rect rx="4" ry="4" x="-20" y="-24" width="40" height="40" class="key enter"/>
-<use href="#mdi:keyboard-return" xlink:href="#mdi:keyboard-return" x="-9" y="-13" height="18" width="18.0" class="key enter tap glyph mdi:keyboard-return"/>
+<g transform="translate(364, 322)" class="key keypos-76">
+<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key side"/>
+<rect rx="4" ry="4" x="-20" y="-24" width="40" height="40" class="key"/>
+<text x="0" y="-4" class="key tap">
+<tspan x="0" dy="-0.6em">&amp;mkp</tspan><tspan x="0" dy="1.2em">MB2</tspan>
+</text>
 </g>
 <g transform="translate(742, 322)" class="key enter keypos-77">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key enter side"/>
@@ -1250,14 +1255,14 @@ rect.held, rect.combo.held {
 </text>
 </g>
 <g class="combo combopos-1">
-<rect rx="6" ry="6" x="98" y="141" width="28" height="26" class="combo"/>
-<text x="112" y="154" class="combo tap">.</text>
-<text x="112" y="143" class="combo shifted">&gt;</text>
+<rect rx="6" ry="6" x="210" y="131" width="28" height="26" class="combo"/>
+<text x="224" y="144" class="combo tap">.</text>
+<text x="224" y="133" class="combo shifted">&gt;</text>
 </g>
 <g class="combo combopos-2">
-<rect rx="6" ry="6" x="210" y="131" width="28" height="26" class="combo"/>
-<text x="224" y="144" class="combo tap">,</text>
-<text x="224" y="133" class="combo shifted">&lt;</text>
+<rect rx="6" ry="6" x="154" y="130" width="28" height="26" class="combo"/>
+<text x="168" y="143" class="combo tap">,</text>
+<text x="168" y="132" class="combo shifted">&lt;</text>
 </g>
 <g class="combo combopos-3">
 <rect rx="6" ry="6" x="154" y="187" width="28" height="26" class="combo"/>
@@ -1283,6 +1288,10 @@ rect.held, rect.combo.held {
 <path d="M910,186 l-154,125" class="combo"/>
 <rect rx="6" ry="6" x="896" y="173" width="28" height="26" class="combo"/>
 <use href="#mdi:progress-download" xlink:href="#mdi:progress-download" x="901" y="177" height="18" width="18.0" class="combo tap glyph mdi:progress-download"/>
+</g>
+<g class="combo combopos-8">
+<rect rx="6" ry="6" x="98" y="29" width="28" height="26" class="combo"/>
+<text x="112" y="42" class="combo tap"><tspan style="font-size: 86%">&amp;gmail1</tspan></text>
 </g>
 </g>
 </g>
@@ -1442,10 +1451,10 @@ rect.held, rect.combo.held {
 <text x="0" y="-4" class="key tap">-</text>
 <text x="0" y="-24" class="key shifted">_</text>
 </g>
-<g transform="translate(28, 161)" class="key keypos-28">
-<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key side"/>
-<rect rx="4" ry="4" x="-20" y="-24" width="40" height="40" class="key"/>
-<use href="#mdi:keyboard-tab" xlink:href="#mdi:keyboard-tab" x="-9" y="-13" height="18" width="18.0" class="key tap glyph mdi:keyboard-tab"/>
+<g transform="translate(28, 161)" class="key held keypos-28">
+<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key held side"/>
+<rect rx="4" ry="4" x="-20" y="-24" width="40" height="40" class="key held"/>
+<use href="#mdi:keyboard-tab" xlink:href="#mdi:keyboard-tab" x="-9" y="-13" height="18" width="18.0" class="key held tap glyph mdi:keyboard-tab"/>
 </g>
 <g transform="translate(84, 161)" class="key keypos-29">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key side"/>
@@ -1747,14 +1756,14 @@ rect.held, rect.combo.held {
 </text>
 </g>
 <g class="combo combopos-1">
-<rect rx="6" ry="6" x="98" y="141" width="28" height="26" class="combo"/>
-<text x="112" y="154" class="combo tap">.</text>
-<text x="112" y="143" class="combo shifted">&gt;</text>
+<rect rx="6" ry="6" x="210" y="131" width="28" height="26" class="combo"/>
+<text x="224" y="144" class="combo tap">.</text>
+<text x="224" y="133" class="combo shifted">&gt;</text>
 </g>
 <g class="combo combopos-2">
-<rect rx="6" ry="6" x="210" y="131" width="28" height="26" class="combo"/>
-<text x="224" y="144" class="combo tap">,</text>
-<text x="224" y="133" class="combo shifted">&lt;</text>
+<rect rx="6" ry="6" x="154" y="130" width="28" height="26" class="combo"/>
+<text x="168" y="143" class="combo tap">,</text>
+<text x="168" y="132" class="combo shifted">&lt;</text>
 </g>
 <g class="combo combopos-3">
 <rect rx="6" ry="6" x="154" y="187" width="28" height="26" class="combo"/>
@@ -1780,6 +1789,10 @@ rect.held, rect.combo.held {
 <path d="M910,186 l-154,125" class="combo"/>
 <rect rx="6" ry="6" x="896" y="173" width="28" height="26" class="combo"/>
 <use href="#mdi:progress-download" xlink:href="#mdi:progress-download" x="901" y="177" height="18" width="18.0" class="combo tap glyph mdi:progress-download"/>
+</g>
+<g class="combo combopos-8">
+<rect rx="6" ry="6" x="98" y="29" width="28" height="26" class="combo"/>
+<text x="112" y="42" class="combo tap"><tspan style="font-size: 86%">&amp;gmail1</tspan></text>
 </g>
 </g>
 </g>
@@ -2244,14 +2257,14 @@ rect.held, rect.combo.held {
 </text>
 </g>
 <g class="combo combopos-1">
-<rect rx="6" ry="6" x="98" y="141" width="28" height="26" class="combo"/>
-<text x="112" y="154" class="combo tap">.</text>
-<text x="112" y="143" class="combo shifted">&gt;</text>
+<rect rx="6" ry="6" x="210" y="131" width="28" height="26" class="combo"/>
+<text x="224" y="144" class="combo tap">.</text>
+<text x="224" y="133" class="combo shifted">&gt;</text>
 </g>
 <g class="combo combopos-2">
-<rect rx="6" ry="6" x="210" y="131" width="28" height="26" class="combo"/>
-<text x="224" y="144" class="combo tap">,</text>
-<text x="224" y="133" class="combo shifted">&lt;</text>
+<rect rx="6" ry="6" x="154" y="130" width="28" height="26" class="combo"/>
+<text x="168" y="143" class="combo tap">,</text>
+<text x="168" y="132" class="combo shifted">&lt;</text>
 </g>
 <g class="combo combopos-3">
 <rect rx="6" ry="6" x="154" y="187" width="28" height="26" class="combo"/>
@@ -2277,6 +2290,10 @@ rect.held, rect.combo.held {
 <path d="M910,186 l-154,125" class="combo"/>
 <rect rx="6" ry="6" x="896" y="173" width="28" height="26" class="combo"/>
 <use href="#mdi:progress-download" xlink:href="#mdi:progress-download" x="901" y="177" height="18" width="18.0" class="combo tap glyph mdi:progress-download"/>
+</g>
+<g class="combo combopos-8">
+<rect rx="6" ry="6" x="98" y="29" width="28" height="26" class="combo"/>
+<text x="112" y="42" class="combo tap"><tspan style="font-size: 86%">&amp;gmail1</tspan></text>
 </g>
 </g>
 </g>
@@ -2741,14 +2758,14 @@ rect.held, rect.combo.held {
 </text>
 </g>
 <g class="combo combopos-1">
-<rect rx="6" ry="6" x="98" y="141" width="28" height="26" class="combo"/>
-<text x="112" y="154" class="combo tap">.</text>
-<text x="112" y="143" class="combo shifted">&gt;</text>
+<rect rx="6" ry="6" x="210" y="131" width="28" height="26" class="combo"/>
+<text x="224" y="144" class="combo tap">.</text>
+<text x="224" y="133" class="combo shifted">&gt;</text>
 </g>
 <g class="combo combopos-2">
-<rect rx="6" ry="6" x="210" y="131" width="28" height="26" class="combo"/>
-<text x="224" y="144" class="combo tap">,</text>
-<text x="224" y="133" class="combo shifted">&lt;</text>
+<rect rx="6" ry="6" x="154" y="130" width="28" height="26" class="combo"/>
+<text x="168" y="143" class="combo tap">,</text>
+<text x="168" y="132" class="combo shifted">&lt;</text>
 </g>
 <g class="combo combopos-3">
 <rect rx="6" ry="6" x="154" y="187" width="28" height="26" class="combo"/>
@@ -2774,6 +2791,10 @@ rect.held, rect.combo.held {
 <path d="M910,186 l-154,125" class="combo"/>
 <rect rx="6" ry="6" x="896" y="173" width="28" height="26" class="combo"/>
 <use href="#mdi:progress-download" xlink:href="#mdi:progress-download" x="901" y="177" height="18" width="18.0" class="combo tap glyph mdi:progress-download"/>
+</g>
+<g class="combo combopos-8">
+<rect rx="6" ry="6" x="98" y="29" width="28" height="26" class="combo"/>
+<text x="112" y="42" class="combo tap"><tspan style="font-size: 86%">&amp;gmail1</tspan></text>
 </g>
 </g>
 </g>

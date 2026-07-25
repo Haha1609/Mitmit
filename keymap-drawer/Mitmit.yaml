@@ -29,7 +29,7 @@ layers:
   - {t: '9', s: (}
   - {t: '0', s: )}
   - {t: '-', s: _}
-  - {t: '$$mdi:keyboard-tab$$', h: '$$mdi:keyboard-tab-reverse$$'}
+  - {t: '$$mdi:keyboard-tab$$', h: raise}
   - Q
   - W
   - E
@@ -43,7 +43,7 @@ layers:
   - O
   - P
   - {t: KP PLUS, h: '='}
-  - {t: INS, h: PAUSE BREAK}
+  - {t: F2, h: lower}
   - A
   - S
   - D
@@ -128,7 +128,7 @@ layers:
   - O
   - P
   - {t: '$$mdi:backspace$$', type: backspace}
-  - $$mdi:apple-keyboard-caps$$
+  - {t: '$$mdi:apple-keyboard-caps$$', type: held}
   - H
   - J
   - K
@@ -161,8 +161,8 @@ layers:
   - $$mdi:apple-keyboard-option$$
   - {t: raise, h: toggle}
   - Gui+$$mdi:keyboard-space$$
-  - {t: '$$mdi:keyboard-space$$', type: held}
-  - {t: '$$mdi:keyboard-return$$', type: enter}
+  - {t: '$$mdi:keyboard-space$$', type: held alternate}
+  - '&mkp MB2'
   - {t: '$$mdi:keyboard-return$$', type: enter}
   - {t: '$$mdi:keyboard-space$$', type: held alternate}
   - '&mkp MB2'
@@ -199,7 +199,7 @@ layers:
   - {t: '9', s: (}
   - {t: '0', s: )}
   - {t: '-', s: _}
-  - $$mdi:keyboard-tab$$
+  - {t: '$$mdi:keyboard-tab$$', type: held}
   - Q
   - W
   - E
@@ -428,9 +428,9 @@ layers:
 combos:
 - p: [5, 1]
   k: PAUSE BREAK
-- p: [30, 29]
-  k: {t: ., s: '>'}
 - p: [31, 32]
+  k: {t: ., s: '>'}
+- p: [30, 31]
   k: {t: ',', s: <}
 - p: [44, 45]
   k: (
@@ -442,3 +442,5 @@ combos:
   k: $$mdi:progress-download$$
 - p: [13, 77]
   k: $$mdi:progress-download$$
+- p: [1, 2]
+  k: '&gmail1'
