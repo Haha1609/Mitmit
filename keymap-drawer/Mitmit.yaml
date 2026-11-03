@@ -71,20 +71,20 @@ layers:
   - {t: ., s: '>'}
   - {t: /, s: '?'}
   - {t: '$$mdi:backspace$$', h: '$$mdi:apple-keyboard-shift$$'}
-  - $$mdi:apple-keyboard-control$$
-  - LGUI
-  - $$mdi:apple-keyboard-option$$
+  - '&mkp MB1'
+  - '&mkp MB3'
+  - '&mkp MB2'
   - $$mdi:backspace-reverse-outline$$
   - {t: '$$mdi:backspace$$', type: backspace}
   - {t: '$$mdi:keyboard-space$$', h: lower}
-  - '&mkp MB2'
+  - {t: '$$mdi:keyboard-return$$', h: '$$mdi:apple-keyboard-control$$'}
   - {t: '$$mdi:backspace$$', type: backspace}
   - {t: '$$mdi:keyboard-space$$', h: lower}
   - '&mkp MB2'
   - {t: '$$mdi:backspace-reverse-outline$$', h: lower}
-  - {t: Ctl+C, h: Ctl+X}
-  - {t: Ctl+V, h: V}
-  - {t: Ctl+KP PLUS, h: Ctl+KP MINUS}
+  - {t: Ctl+C, h: (LC(X))}
+  - {t: Ctl+V, h: (LG(V))}
+  - {t: Ctl+KP PLUS, h: (LC(KP MINUS))}
   lower:
   - $$mdi:keyboard-esc$$
   - F1
